@@ -13,7 +13,7 @@ class IconsAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@bl/files/icons/assets/src';
+    public $sourcePath = '@vendor/black-lamp/yii2-file-icons/src/assets/src';
     /**
      * @inheritdoc
      */
