@@ -1,0 +1,38 @@
+{
+  "name": "black-lamp/yii2-file-icons",
+  "description": "Widget for getting the font-icon for file extension",
+  "keywords": ["yii2", "widget", "file", "files", "icon", "icons"],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "support": {
+    "source": "https://github.com/black-lamp/yii2-file-icons",
+    "issues": "https://github.com/black-lamp/yii2-file-icons/issues"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "yiisoft/yii2": "^2.0.4"
+  },
+  "require-dev": {
+    "codeception/codeception": "*",
+    "codeception/verify": "*",
+    "codeception/specify": "*"
+  },
+  "authors": [
+    {
+      "name": "Vladimir Kuprienko",
+      "email": "vldmr.kuprienko@gmail.com",
+      "role": "lead"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "bl\\files\\icons\\": "src"
+    }
+  }
+}
