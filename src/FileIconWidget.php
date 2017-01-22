@@ -42,7 +42,7 @@ class FileIconWidget extends Widget
     /**
      * @var boolean If set `true` for file extensions will be returned default icons
      */
-    public $useDefaultIcons = true;
+    public $useDefaultIcons = false;
     /**
      * @var string Default icon. Set if icon not found in $icons array
      */
