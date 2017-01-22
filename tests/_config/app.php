@@ -1,7 +1,7 @@
 <?php
 return [
     'id' => 'test-app',
-    'class' => 'yii\console\Application',
+    'class' => 'yii\web\Application',
 
     'basePath' => Yii::getAlias('@tests'),
     'vendorPath' => Yii::getAlias('@vendor'),
