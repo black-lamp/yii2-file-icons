@@ -62,3 +62,15 @@ method returns empty icon. Empty icon value gets from `emptyIcon` widget option.
 <i class="file-video"></i>
 <i class="file-code"></i>
 ```
+or using `\bl\files\icons\helpers\IconHelper`
+```php
+\bl\files\icons\helpers\IconHelper::icon('text');
+\bl\files\icons\helpers\IconHelper::icon('pdf');
+\bl\files\icons\helpers\IconHelper::icon('power-point');
+\bl\files\icons\helpers\IconHelper::icon('archive');
+\bl\files\icons\helpers\IconHelper::icon('word');
+\bl\files\icons\helpers\IconHelper::icon('excel');
+\bl\files\icons\helpers\IconHelper::icon('picture');
+\bl\files\icons\helpers\IconHelper::icon('video');
+\bl\files\icons\helpers\IconHelper::icon('code');
+```

@@ -12,6 +12,7 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 use bl\files\icons\assets\IconsAsset;
+use bl\files\icons\helpers\IconHelper;
 
 /**
  * Widget for getting the font-icon for file extension
@@ -79,43 +80,43 @@ class FileIconWidget extends Widget
     {
         $this->defaultIcons = [
             'txt' => [
-                'icon' => Html::tag('i', '', ['class' => 'file-text'])
+                'icon' => IconHelper::icon('text')
             ],
             'pdf' => [
-                'icon' => Html::tag('i', '', ['class' => 'file-pdf'])
+                'icon' => IconHelper::icon('pdf')
             ],
             'groups' => [
                 [
                     'extensions' => ['ppt', 'pptx'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-power-point'])
+                    'icon' => IconHelper::icon('power-point')
                 ],
                 [
                     'extensions' => ['doc', 'docx'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-word'])
+                    'icon' => IconHelper::icon('word')
                 ],
                 [
                     'extensions' => ['xls', 'xlsx'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-excel'])
+                    'icon' => IconHelper::icon('excel')
                 ],
                 [
                     'extensions' => ['jpg', 'jpeg', 'png', 'gif', 'ico'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-picture'])
+                    'icon' => IconHelper::icon('picture')
                 ],
                 [
                     'extensions' => ['mp3', 'ogg'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-music'])
+                    'icon' => IconHelper::icon('music')
                 ],
                 [
                     'extensions' => ['mp4', 'flv'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-video'])
+                    'icon' => IconHelper::icon('video')
                 ],
                 [
                     'extensions' => ['zip', '7z', 'rar'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-archive'])
+                    'icon' => IconHelper::icon('archive')
                 ],
                 [
                     'extensions' => ['php', 'html', 'css', 'js'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-code'])
+                    'icon' => IconHelper::icon('code')
                 ],
             ]
         ];
