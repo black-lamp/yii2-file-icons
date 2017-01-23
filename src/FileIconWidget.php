@@ -126,8 +126,11 @@ class FileIconWidget extends Widget
      */
     protected function iconFromArray($array, $extension)
     {
-        $icon = $array[$extension]['icon'];
-        if (empty($icon) && !empty($array['groups'])) {
+        $icon = null;
+        if (ArrayHelper::keyExists($extension, $array)) {
+            $icon = $array[$extension]['icon'];
+        }
+        elseif (ArrayHelper::keyExists('groups', $array)) {
             foreach ($array['groups'] as $group) {
                 if (ArrayHelper::isIn($extension, $group['extensions'])) {
                     $icon = $group['icon'];
