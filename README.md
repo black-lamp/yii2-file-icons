@@ -39,3 +39,9 @@ $widget = \bl\files\icons\FileIconWidget::begin([
 echo $widget->getIcon('image.jpg');
 $widget->end();
 ```
+##### Widget configuration properties
+| Option | Description | Type | Default |
+|----|----|----|----|
+|icons|Array with configuration for file extensions and icons|array|-|
+|useDefaultIcons|If set `true` - widget will be user default icons for files|boolean|false|
+|emptyIcon|If icon will not be found if `icons` array or in defaul icons set - value from this property will be returned|string|'Icon for this extension not found!'|

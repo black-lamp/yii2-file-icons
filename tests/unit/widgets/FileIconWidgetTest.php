@@ -7,6 +7,9 @@
 
 namespace tests\unit;
 
+use Yii;
+use yii\helpers\Html;
+
 use tests\unit\TestCase;
 
 use bl\files\icons\FileIconWidget;
@@ -29,6 +32,11 @@ class FileIconWidgetTest extends TestCase
      */
     protected function _before()
     {
+        Yii::setAlias(
+            '@vendor/black-lamp/yii2-file-icons/src/assets/src',
+            Yii::getAlias('@tests') . '/../src/assets/src'
+        );
+
         $this->widget = FileIconWidget::begin([
             'useDefaultIcons' => true,
             'emptyIcon' => 'test empty icon',
@@ -36,7 +44,7 @@ class FileIconWidgetTest extends TestCase
                 'test' => [
                     'icon' => 'test icon'
                 ],
-                'group' => [
+                'groups' => [
                     [
                         'extensions' => ['test1', 'test2', 'test3'],
                         'icon' => 'test group icon'
@@ -65,7 +73,7 @@ class FileIconWidgetTest extends TestCase
     public function testGetIconFromGroup()
     {
         $expected = 'test group icon';
-        $actual = $this->widget->getIcon('tes1');
+        $actual = $this->widget->getIcon('test1');
 
         $this->assertEquals($expected, $actual, 'Method must return a icon from file group');
 
