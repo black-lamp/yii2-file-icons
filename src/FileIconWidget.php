@@ -95,7 +95,7 @@ class FileIconWidget extends Widget
                 ],
                 [
                     'extensions' => ['xls', 'xlsx'],
-                    'icon' => Html::tag('i', '', ['class' => 'file-word'])
+                    'icon' => Html::tag('i', '', ['class' => 'file-excel'])
                 ],
                 [
                     'extensions' => ['jpg', 'jpeg', 'png', 'gif', 'ico'],
@@ -112,6 +112,10 @@ class FileIconWidget extends Widget
                 [
                     'extensions' => ['zip', '7z', 'rar'],
                     'icon' => Html::tag('i', '', ['class' => 'file-archive'])
+                ],
+                [
+                    'extensions' => ['php', 'html', 'css', 'js'],
+                    'icon' => Html::tag('i', '', ['class' => 'file-code'])
                 ],
             ]
         ];
