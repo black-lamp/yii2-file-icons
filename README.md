@@ -50,6 +50,9 @@ method returns empty icon. Empty icon value gets from `emptyIcon` widget option.
 |emptyIcon|If icon will not be found if `icons` array or in defaul icons set - value from this property will be returned|string|'Icon for this extension not found!'|
 
 ### Default icon set
+If you set widget option `useDefaultIcons` in `true` - method `FileIconWidget::getIcon()` will be returns
+default icons for file extensions. Also you can override default icons if you dont't wont to use default icon
+for curren file extension.
 ![Default icon set](/docs/images/icons.png "Default icon set")
 ```html
 <i class="file-text"></i>
@@ -64,13 +67,13 @@ method returns empty icon. Empty icon value gets from `emptyIcon` widget option.
 ```
 or using `\bl\files\icons\helpers\IconHelper`
 ```php
-\bl\files\icons\helpers\IconHelper::icon('text');
-\bl\files\icons\helpers\IconHelper::icon('pdf');
-\bl\files\icons\helpers\IconHelper::icon('power-point');
-\bl\files\icons\helpers\IconHelper::icon('archive');
-\bl\files\icons\helpers\IconHelper::icon('word');
-\bl\files\icons\helpers\IconHelper::icon('excel');
-\bl\files\icons\helpers\IconHelper::icon('picture');
-\bl\files\icons\helpers\IconHelper::icon('video');
-\bl\files\icons\helpers\IconHelper::icon('code');
+IconHelper::icon('text');
+IconHelper::icon('pdf');
+IconHelper::icon('power-point');
+IconHelper::icon('archive');
+IconHelper::icon('word');
+IconHelper::icon('excel');
+IconHelper::icon('picture');
+IconHelper::icon('video');
+IconHelper::icon('code');
 ```
