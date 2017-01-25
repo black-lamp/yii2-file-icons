@@ -15,7 +15,7 @@ composer require black-lamp/yii2-file-icons
 ```
 or add
 ```json
-"black-lamp/yii2-file-icons": "dev-master"
+"black-lamp/yii2-file-icons": "^1.0.0"
 ```
 to the require section of your composer.json.
 
