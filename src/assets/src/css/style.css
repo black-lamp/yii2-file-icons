@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-i[class='file-'] {
+i[class^='file-'] {
   font-family: 'file-icons';
   speak: none;
   font-style: normal;
